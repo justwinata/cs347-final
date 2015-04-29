@@ -1,0 +1,76 @@
+DROP SEQUENCE Documents_seq ; 
+create sequence Documents_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER Documents_PK_trig 
+; 
+
+create or replace trigger Documents_PK_trig 
+before insert on Documents
+for each row 
+begin 
+select Documents_seq.nextval into :new.doc_id from dual; 
+end; 
+/
+
+DROP SEQUENCE Employees_seq ; 
+create sequence Employees_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER Employees_PK_trig 
+; 
+
+create or replace trigger Employees_PK_trig 
+before insert on Employees
+for each row 
+begin 
+select Employees_seq.nextval into :new.employee_id from dual; 
+end; 
+/
+
+DROP SEQUENCE Lists_seq ; 
+create sequence Lists_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER Lists_PK_trig 
+; 
+
+create or replace trigger Lists_PK_trig 
+before insert on Lists
+for each row 
+begin 
+select Lists_seq.nextval into :new.list_seq_id from dual; 
+end; 
+/
+
+DROP SEQUENCE MEMBERSHIP_seq ; 
+create sequence MEMBERSHIP_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER MEMBERSHIP_PK_trig 
+; 
+
+create or replace trigger MEMBERSHIP_PK_trig 
+before insert on MEMBERSHIP
+for each row 
+begin 
+select MEMBERSHIP_seq.nextval into :new.list_seq_id from dual; 
+end; 
+/
+
+DROP INDEX Employees_employee_id_FK_0 ;
+CREATE INDEX Employees_employee_id_FK_0 ON Documents(Employees_employee_id) ;
+DROP INDEX Employees_employee_id_FK_1 ;
+CREATE INDEX Employees_employee_id_FK_1 ON MEMBERSHIP(Employees_employee_id) ;
+DROP INDEX Lists_list_seq_id_FK_2 ;
+CREATE INDEX Lists_list_seq_id_FK_2 ON rel1(Lists_list_seq_id) ;
+DROP INDEX Membership_list_seq_id_FK_3 ;
+CREATE INDEX Membership_list_seq_id_FK_3 ON rel1(Membership_list_seq_id) ;
