@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E8B259B-73EB-0D90-A543-12103451CBAA" name="Documents">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>65D12274-C4B0-DD51-5794-E8B017C45CD5</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="doc_id" id="2EE074AB-0C3F-3A9D-0B0A-3CBFA57A8189">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>AEE9A9C6-DEBE-459C-394A-133EFA6135B9</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attach_mimetype" id="69024526-7F46-222E-5E76-463517EDD623">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>66AAAADA-8F6A-C088-C18C-4CF2F5D3CDD1</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attach_filename" id="25B1DB80-7D86-1911-FC38-531DE42E5694">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>F7D5349F-4D67-F2BC-5941-1D96787B4CC6</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attach_last_update" id="88D8B95C-CEFA-B320-712E-1DF67C741499">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>3D8A89F8-080D-2502-B99D-FC445E816EA9</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attach_charset" id="727E1723-0FF4-16DE-8702-ADB5177E747A">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>4CB996BB-B455-070A-5F98-F2C4982CFEE7</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attach_file" id="1A9B1486-4BA5-C923-529E-9E41229EED7D">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>56EAD39C-C8ED-6F31-E161-56C1891855A5</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Employees_employee_id" id="8E0894B4-BF63-3F85-F96F-5405AEE8A66D">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<comment>Unique identifier for an employee generated from a sequence.</comment>
+<generatorID>17443897-C261-3404-0D2A-E2286C19B909</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>0B5E781A-DAEA-97AD-2348-835A6FF87953</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B093A440-59C4-E0B1-60EE-14547CDD5AD7" referredColumn="0B5E781A-DAEA-97AD-2348-835A6FF87953"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="058D3469-EAF1-EEC0-FA22-AA9BDEAAB17D" name="Documents_PK">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>A4F76880-6C5D-2FE5-AE50-72F2E84F6B53</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EE074AB-0C3F-3A9D-0B0A-3CBFA57A8189"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5BA2134-A46D-5DE8-ED3A-3C7A49A6626B" name="Documents_Employees_FK">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:50 UTC</createdTime>
+<generatorID>A6ED0D9D-397A-2C44-8AD6-995C09808F8A</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E0894B4-BF63-3F85-F96F-5405AEE8A66D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

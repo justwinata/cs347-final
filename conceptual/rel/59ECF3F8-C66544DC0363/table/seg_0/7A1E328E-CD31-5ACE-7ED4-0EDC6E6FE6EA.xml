@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A1E328E-CD31-5ACE-7ED4-0EDC6E6FE6EA" name="Membership">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>1C14F619-A28B-D60C-EFCB-840146CB47F8</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="list_seq_id" id="B9688D7A-3B44-4722-85FC-69AA2212A1D0">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<comment>Unique identifier tied to</comment>
+<generatorID>6B57FB4C-17E7-0530-A667-19C405254CFF</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_list_id" id="2D0842DB-F9BD-029F-48DA-9DFEB5199E44">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<comment>Unique list id tied to notice_lists.list_seq_id. A record may either have an employee_id or a member_list_id but not both.</comment>
+<generatorID>3AAA667C-7C3C-4773-DD48-E9254E74BAE6</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_added" id="380DF52B-C727-F7ED-C6E8-A9F404371195">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<comment>Date when the member was added.</comment>
+<generatorID>DCE0278B-EE8C-F3F4-607A-8B4A59ECD921</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Employees_employee_id" id="5599E408-4300-6515-ECE3-F64845B53861">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<comment>Unique identifier for an employee generated from a sequence.</comment>
+<generatorID>DC6C039D-D896-DCE3-5915-90D8161A105C</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>0B5E781A-DAEA-97AD-2348-835A6FF87953</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7FE806C5-F374-8227-D112-2ED5623360DB" referredColumn="0B5E781A-DAEA-97AD-2348-835A6FF87953"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96A52D2C-E4B5-525B-E6EA-B71153300745" name="Membership_PK">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>BEF8B5FB-0A35-D92A-4996-C05073035A5F</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9688D7A-3B44-4722-85FC-69AA2212A1D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7C3E5FA-C043-BACC-02C0-FC1707D0B334" name="Membership_Employees_FK">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:50 UTC</createdTime>
+<generatorID>91C62840-C3DD-D4BD-76BF-AFFB24BBB86B</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5599E408-4300-6515-ECE3-F64845B53861"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

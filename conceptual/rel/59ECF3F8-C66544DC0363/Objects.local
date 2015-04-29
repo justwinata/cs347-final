@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="5E8B259B-73EB-0D90-A543-12103451CBAA" name="Documents" seqName="seg_0"/>
+   <object objectType="Table" objectID="77A9F9A0-1E98-3853-EE9C-B2CC45FFD6F0" name="Employees" seqName="seg_0"/>
+   <object objectType="Table" objectID="40937052-F1BF-35DB-6E2B-16F569711287" name="Lists" seqName="seg_0"/>
+   <object objectType="Table" objectID="7A1E328E-CD31-5ACE-7ED4-0EDC6E6FE6EA" name="Membership" seqName="seg_0"/>
+   <object objectType="Table" objectID="BE258518-F7E6-593A-FD3A-F23B944CD1A7" name="rel1" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B093A440-59C4-E0B1-60EE-14547CDD5AD7" name="Documents_Employees_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="7FE806C5-F374-8227-D112-2ED5623360DB" name="Membership_Employees_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="CDB90A5F-C8EA-5272-5D92-0147C0F20264" name="rel1_Lists_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B467E46F-8522-61E8-A647-81CCE4334472" name="rel1_Membership_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE258518-F7E6-593A-FD3A-F23B944CD1A7" name="rel1">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>5BFD9BD8-19C7-E18E-33B8-13DB26BB8E08</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Membership_list_seq_id" id="B43E62B1-9C08-182B-3732-9F0FA6F7BDA5">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<comment>Unique identifier tied to</comment>
+<generatorID>EC49BBCD-EE45-0D6F-0F3D-C7527B550964</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>B9688D7A-3B44-4722-85FC-69AA2212A1D0</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B467E46F-8522-61E8-A647-81CCE4334472" referredColumn="B9688D7A-3B44-4722-85FC-69AA2212A1D0"/>
+</associations>
+</Column>
+<Column name="Lists_list_seq_id" id="73CC90DF-7B0C-2188-01B3-175CEA50F5B6">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<comment>Unique identifier generated from a sequence</comment>
+<generatorID>1A681C08-6876-405C-8F92-0EEC8A90281B</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>37FCC2D3-5F8B-325B-FDDB-58918ED74CAA</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CDB90A5F-C8EA-5272-5D92-0147C0F20264" referredColumn="37FCC2D3-5F8B-325B-FDDB-58918ED74CAA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F4E661E-69C6-8F08-9E16-9B81E7829B12" name="rel1_PK">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:50 UTC</createdTime>
+<generatorID>3AED8616-1200-813D-3AFA-D761B2D34B01</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="4F8AC332-2C5C-EDE5-F43B-ACE53E10291E" name="rel1_Membership_FK">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:50 UTC</createdTime>
+<generatorID>1AC1ED2B-FDC3-10A1-FC85-047A4316F64E</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B43E62B1-9C08-182B-3732-9F0FA6F7BDA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DAB0AA33-DAF8-2523-9140-8745A5CDD84E" name="rel1_Lists_FK">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:50 UTC</createdTime>
+<generatorID>278F55D8-74C3-07DC-8CFC-EF4A831CC403</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73CC90DF-7B0C-2188-01B3-175CEA50F5B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40937052-F1BF-35DB-6E2B-16F569711287" name="Lists">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>D3601C4A-FC81-65C9-AAD7-6F89B4F3A8EF</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="list_seq_id" id="37FCC2D3-5F8B-325B-FDDB-58918ED74CAA">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<comment>Unique identifier generated from a sequence</comment>
+<generatorID>8427799A-7963-6CF1-47AD-A0EA6B340E8E</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_name" id="D4203212-FBA6-F540-AE01-E28092BF5FA6">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<comment>Unique name for the mailing list - no spaces allowed</comment>
+<generatorID>D4B22B48-E76A-70D0-344E-896323E391C4</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ownership_div_code" id="7FA1D55A-08CD-499D-EBED-F570AEB5C20B">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<comment>4-character division code</comment>
+<generatorID>009E437A-01C8-2CAA-3C38-C3F2820D8A53</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_description" id="18FA572D-0547-F276-8374-4B0F82875CDA">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<comment>Text description for defining the usage of the list</comment>
+<generatorID>3C59641A-FAEF-473F-EA38-4E5C12032096</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3500</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="external_view_name" id="22C20451-B44E-44A7-7620-65751533ABDE">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<comment>50-character text field to reference an external view name.</comment>
+<generatorID>93A84F99-3284-2CAF-1D9C-3CBA06C763D2</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="creation_date" id="01E6E6CF-B708-2547-3A33-7D7B1FCFBF84">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>4FDC2057-FD9D-0E67-C970-B566D14D1A6C</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_status" id="62B3AB6D-9391-2F1C-9929-8502C9682AA7">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<comment>A for active or I for inactive</comment>
+<generatorID>C0AD4029-5F51-A267-39BF-E13AC081E231</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_eff_date" id="2B9F52B3-2373-DAC3-265D-505518AF64F0">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>821DB526-5C00-34FD-EDE1-8F4558C6D13C</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B7661BA-BE7B-3F11-3778-A248B50C4BA7" name="Lists_PK">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 04:06:49 UTC</createdTime>
+<generatorID>5E4E5B41-E2AD-CE44-E9BA-34AB3D8E14DF</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37FCC2D3-5F8B-325B-FDDB-58918ED74CAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

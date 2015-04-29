@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1538CED8-842F-C510-FAD2-30A4A942685E" name="Active_Employees">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-03-28 21:53:47 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="59ECF3F8-CFE7-3C3A-DC34-C66544DC0363" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="employee_id" id="66056032-9FDF-930A-C049-19CE547E3804">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-03-28 21:53:56 UTC</createdTime>
+<comment>Unique identifier for an employee generated from a sequence.</comment>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="59ECF3F8-CFE7-3C3A-DC34-C66544DC0363" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="employee_name" id="F50B078C-B4B6-1009-F286-75B9D2DF1BE4">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 03:58:54 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="59ECF3F8-CFE7-3C3A-DC34-C66544DC0363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="employee_lab" id="3D0FBA48-7864-2D33-3943-06CDAD5FF266">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-04-29 14:11:36 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="59ECF3F8-CFE7-3C3A-DC34-C66544DC0363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="employee_division" id="EC4554D0-A972-D9EE-D85D-7E04BD2CE4B0">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-03-28 21:56:27 UTC</createdTime>
+<comment>4-character division code identifying which division of a lab the employee is appointed to.</comment>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="59ECF3F8-CFE7-3C3A-DC34-C66544DC0363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="employee_status" id="37CBA2BB-5D69-FA39-3683-68592BBD9BCA">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-03-28 21:57:27 UTC</createdTime>
+<comment>A for active of I for inactive</comment>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="59ECF3F8-CFE7-3C3A-DC34-C66544DC0363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="status_eff_date" id="B6C49C4A-3321-18CF-26E0-57F786D3FDB5">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-03-28 21:58:07 UTC</createdTime>
+<comment>Date the employee-status became effective</comment>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="59ECF3F8-CFE7-3C3A-DC34-C66544DC0363" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DCEAF3B7-2D31-FA7B-D637-6107FCDCA4EC" name="{entity} PK">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-03-28 21:54:35 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="59ECF3F8-CFE7-3C3A-DC34-C66544DC0363" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>66056032-9FDF-930A-C049-19CE547E3804</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

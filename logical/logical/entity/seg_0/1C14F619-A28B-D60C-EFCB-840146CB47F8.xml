@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C14F619-A28B-D60C-EFCB-840146CB47F8" name="Notice_List_Members">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-03-28 22:02:44 UTC</createdTime>
+<ownerDesignName>final project</ownerDesignName>
+<engineerTo>
+<item key="F8112124-B16F-7A24-141F-A59332CF2976" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>1538CED8-842F-C510-FAD2-30A4A942685E</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="list_seq_id" id="6B57FB4C-17E7-0530-A667-19C405254CFF">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-03-28 22:03:03 UTC</createdTime>
+<comment>Unique identifier tied to</comment>
+<ownerDesignName>final project</ownerDesignName>
+<engineerTo>
+<item key="F8112124-B16F-7A24-141F-A59332CF2976" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="employee_id" id="BF70D610-27F2-EF04-054C-B7A56711E62F">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-03-28 22:03:28 UTC</createdTime>
+<comment>Unique employee id tied to active_employees.employee_id. A record may either have an employee_id or a member_list_id but not both.</comment>
+<ownerDesignName>final project</ownerDesignName>
+<engineerTo>
+<item key="F8112124-B16F-7A24-141F-A59332CF2976" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="member_list_id" id="3AAA667C-7C3C-4773-DD48-E9254E74BAE6">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-03-28 22:04:11 UTC</createdTime>
+<comment>Unique list id tied to notice_lists.list_seq_id. A record may either have an employee_id or a member_list_id but not both.</comment>
+<ownerDesignName>final project</ownerDesignName>
+<engineerTo>
+<item key="F8112124-B16F-7A24-141F-A59332CF2976" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="date_added" id="DCE0278B-EE8C-F3F4-607A-8B4A59ECD921">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-03-28 22:05:09 UTC</createdTime>
+<comment>Date when the member was added.</comment>
+<ownerDesignName>final project</ownerDesignName>
+<engineerTo>
+<item key="F8112124-B16F-7A24-141F-A59332CF2976" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BEF8B5FB-0A35-D92A-4996-C05073035A5F" name="{entity} PK">
+<createdBy>Samuel</createdBy>
+<createdTime>2015-03-28 22:03:19 UTC</createdTime>
+<ownerDesignName>final project</ownerDesignName>
+<engineerTo>
+<item key="F8112124-B16F-7A24-141F-A59332CF2976" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6B57FB4C-17E7-0530-A667-19C405254CFF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
